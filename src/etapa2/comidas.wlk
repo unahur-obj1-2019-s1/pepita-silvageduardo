@@ -34,7 +34,6 @@ object mijo{
 	}
 }
 object canelones{
-	var canelones = 20
 	var conSalsa = true
 	var conQueso = true
 	method sacarSalsa(){
@@ -51,22 +50,22 @@ object canelones{
 			conSalsa = false
 	}
 	method sacarCanelones(){
-		canelones = 0
+		return  0
 	}
 	method energiaPorGramo(){
 		if ( conSalsa && conQueso ){
-			canelones += 12
-			return canelones
+			return  32
+			
 		}else{
 		if( conSalsa ){
-			canelones += 5
-			return canelones
+			return  25
+			
 			}else
 				if( conQueso ){
-					canelones += 7
-					return canelones
+					return 27
+					
 				}else
-				return canelones
+				return 0
 			}
 }
 }

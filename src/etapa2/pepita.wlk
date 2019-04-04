@@ -26,8 +26,12 @@ object pepita {
 		return cuanto
 	}
 	
-	method salirAComer() {
-		self.volar(5)		// "self" es una referencia al objeto que recibe el mensaje
+	method salirAComer() { // pepita se dice que salga a comer 
+		self.volar( 5 )	  // y la funcion saliracomer() le envia el msj a si mismo
+		self.comer( alpiste , 80 )	
+		self.volar( 5 )
+		
+		// "self" es una referencia a si mismo y recibe el msj
 		// ... completar este metodo con las otra acciones sobre self
 	}
 	
@@ -37,6 +41,7 @@ object pepita {
 		// completar el método, de acuerdo a la estructura
 		// que se deja comentada aca abajo
 		} else if (self.estaFeliz()) {
+			self.volar ( 8 )}
 			//		
 		}
 	}
